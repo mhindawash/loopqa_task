@@ -1,0 +1,25 @@
+{
+  "name": "loopqa_automation_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  }
+}
