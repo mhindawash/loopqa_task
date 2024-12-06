@@ -1,19 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { login } from '../helpers/loginHelper';
-
-// Import the login data from the new JSON file
-import loginData from '../loginData.json';
 import testData from '../testData.json';
 
-loginData.forEach(({ username, password, shouldLogin }) => {
-  test(`Login with ${username}`, async ({ page }) => {
+for (const { task, status, tags, app, username, password, shouldLogin } of testData) {
+  test(`Verify task "${task}" in ${app} for user "${username}"`, async ({ page }) => {
+    // Call the login function with the new arguments
     await login(page, username, password, shouldLogin);
-  });
-});
-
-testData.forEach(({ task, status, tags, app }) => {
-  test(`Verify task "${task}" in ${app}`, async ({ page }) => {
-    await login(page, 'admin', 'password123', true);  // Use valid login here for task verification
 
     // Check if the "Web Application" or relevant "app" title is visible
     const isAppPage = await page.locator(`h1:has-text("${app}")`).isVisible();
@@ -40,4 +32,4 @@ testData.forEach(({ task, status, tags, app }) => {
       await expect(tagElement).toBeVisible(); // Assert the tag is visible
     }
   });
-});
+}

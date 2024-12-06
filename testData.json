@@ -1,39 +1,76 @@
 [
-    {
-      "app": "Web Application",
-      "task": "Implement user authentication",
-      "status": "To Do",
-      "tags": ["Feature", "High Priority"]
-    },
-    {
-      "app": "Web Application",
-      "task": "Fix navigation bug",
-      "status": "To Do",
-      "tags": ["Bug"]
-    },
-    {
-      "app": "Web Application",
-      "task": "Design system updates",
-      "status": "In Progress",
-      "tags": ["Design"]
-    },
-    {
-      "app": "Mobile Application",
-      "task": "Push notification system",
-      "status": "To Do",
-      "tags": ["Feature"]
-    },
-    {
-      "app": "Mobile Application",
-      "task": "Offline mode",
-      "status": "In Progress",
-      "tags": ["Feature", "High Priority"]
-    },
-    {
-      "app": "Mobile Application",
-      "task": "App icon design",
-      "status": "Done",
-      "tags": ["Design"]
-    }
-  ]
+  {
+    "app": "Web Application",
+    "task": "Implement user authentication",
+    "status": "To Do",
+    "tags": ["Feature", "High Priority"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Web Application",
+    "task": "Fix navigation bug",
+    "status": "To Do",
+    "tags": ["Bug"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Web Application",
+    "task": "Design system updates",
+    "status": "In Progress",
+    "tags": ["Design"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Mobile Application",
+    "task": "Push notification system",
+    "status": "To Do",
+    "tags": ["Feature"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Mobile Application",
+    "task": "Offline mode",
+    "status": "In Progress",
+    "tags": ["Feature", "High Priority"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Mobile Application",
+    "task": "App icon design",
+    "status": "Done",
+    "tags": ["Design"],
+    "username": "admin",
+    "password": "password123",
+    "shouldLogin": true
+  },
+  {
+    "app": "Web Application",
+    "task": "Implement user authentication",
+    "status": "To Do",
+    "tags": ["Feature", "High Priority"],
+    "username": "invalidUser",
+    "password": "wrongPassword123",
+    "shouldLogin": false
+  },
+  {
+    "app": "Mobile Application",
+    "task": "Push notification system",
+    "status": "To Do",
+    "tags": ["Feature"],
+    "username": "invalidUser",
+    "password": "wrongPassword123",
+    "shouldLogin": false
+  }
+]
+
   
