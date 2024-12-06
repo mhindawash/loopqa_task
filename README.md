@@ -54,7 +54,11 @@
  To execute the test suite, run the following command:
 
  ```bash
- npx playwright test
+ npx playwright test 
+ ```
+ or
+ ```bash
+ npm test
  ```
 
  Playwright will automatically load the test data from `testData.json`, iterate over the test cases, and run them sequentially.
